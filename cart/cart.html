@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+    <a href="../index.html"><i class="fa-solid fa-arrow-left" id="back"></i></a>
+    <h1>Cart</h1>
+   <div class="cart"> <!-- Your cart display area -->
+  <div id="cart-product">
+
+  </div>
+  <hr>
+  <div class="coupon">
+    <label for="coupon">Coupon</label>
+    <input type="text">
+  </div>
+  <hr>
+  <div class="bill">
+    <h3 id="subtotal">00</h3>
+    <p id="tax">00</p>
+    <p id="total">00</p>
+  </div>
+  <hr>
+  <div class="purchase">
+    <h1>Payment</h1>
+    <p id="total2">00</p>
+    <select name="" id="">
+        <option value="">UPI</option>
+        <option value="">Cash On Delivery</option>
+        <option value="">Credit Card</option>
+    </select>
+    <button onclick="showDeliveryPopup()">Place Order</button>
+  </div>
+<div class="del-over">
+  <div class="delivery">
+    <i class="fa-solid fa-truck"></i>
+    <p>Your Product Will Be Delivered Soon</p>
+  </div>
+  </div>
+</div>
+  <!-- Your script -->
+  <script src="cart.js"></script>
+</body>
+</html>

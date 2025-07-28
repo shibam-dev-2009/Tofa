@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h1{
+    text-align: center;
+}
+#back{
+    font-size: 30px;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+.cart-product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+.cart{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.coupon{
+     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border:1px solid black;
+    margin-bottom: 10px;
+}
+.coupon input{
+    padding: 20px;
+    height: 30px;
+    width: auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+.items {
+    border: 1px solid black;
+    max-width: 100%;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.items img {
+  height: auto;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.item-details p {
+  color: #555;
+  font-size: 16px;
+}
+.bill{
+    width: 80%;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+
+.purchase{
+    border: 1px solid black;
+    padding: 20px;
+    height: 30%;
+    margin-bottom: 20px;
+    width: 80%;
+    gap: 20px;
+}
+
+hr{
+    width: 100vw;
+    margin-bottom: 20px;
+}
+.del-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* dim background */
+  display: none; /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.delivery {
+  background-color: white;
+  padding: 80px 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.delivery i {
+  font-size: 30px;
+  color: rgb(0, 80, 0);
+  margin-bottom: 10px;
+}
