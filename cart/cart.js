@@ -32,8 +32,8 @@ if (!container || !subtotalBox) {
 
   subtotalBox.innerText = `Subtotal: ₹${subtotal}`;
   taxBox.innerText = `Tax: ₹${tax}`;
-  totalBox.innerText = `Total: ₹${total}`;
-  total2Box.innerText = `Total: ₹${total}`;
+  totalBox.innerText = `Total: ₹${total.toFixed(2)}`;
+  total2Box.innerText = `Total: ₹${total.toFixed(2)}`;
 }
 function showDeliveryPopup() {
   const popup = document.querySelector('.del-over');
