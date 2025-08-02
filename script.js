@@ -21,6 +21,7 @@ products.forEach(product => {
     <img src="${product.image}" width="150" />
     <p>Price: ₹${product.price}</p>
     <button class="add-cart-btn">Add to Cart</button>
+    
   `;
 
   // Add event listener to the button

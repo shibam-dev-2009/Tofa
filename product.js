@@ -20,5 +20,19 @@ const products = [
     price: 599,
     description: "Eco-friendly durable canvas bag.",
     image: "Untitled.jpg"
+  },
+     {
+    id: 4,
+    name: "Canvas Bag",
+    price: 599,
+    description: "Eco-friendly durable canvas bag.",
+    image: "Untitled.jpg"
+  },
+     {
+    id: 5,
+    name: "Canvas Bag",
+    price: 599,
+    description: "Eco-friendly durable canvas bag.",
+    image: "Untitled.jpg"
   }
 ];
