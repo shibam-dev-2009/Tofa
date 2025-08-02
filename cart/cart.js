@@ -4,9 +4,19 @@ const subtotalBox = document.getElementById("subtotal");
 const taxBox = document.getElementById("tax");
 const totalBox = document.getElementById("total");
 const total2Box = document.getElementById("total2");
+const coupon = document.getElementById("coupon");
+const applied = document.getElementById("discount-apllied");
+const applyBtn = document.getElementById("apply-coupon"); // Add a button to apply coupon
+
+let discount = 0; // Default no discount
+
+const couponCodes = {
+  code: 36665,
+  code1: 36675,
+  code2: 36685,
+};
 
 function renderCart() {
-  // Clear previous content
   container.innerHTML = "";
 
   if (!container || !subtotalBox) {
@@ -39,11 +49,15 @@ function renderCart() {
     subtotal += product.price;
   });
 
-  // Tax and total calculations
   const tax = subtotal * 0.18;
-  const total = subtotal + tax;
+  let total = subtotal + tax;
 
-  // Update price values
+  // Apply discount if any
+  if (discount > 0) {
+    total = total - (total * discount);
+    applied.innerText = "₹"+(total * discount).toFixed(2);
+  }
+
   subtotalBox.innerText = `Subtotal: ₹${subtotal}`;
   taxBox.innerText = `Tax: ₹${tax.toFixed(2)}`;
   totalBox.innerText = `Total: ₹${total.toFixed(2)}`;
@@ -56,19 +70,36 @@ function renderCart() {
       const index = parseInt(btn.getAttribute("data-index"));
       cart.splice(index, 1);
       localStorage.setItem("cart", JSON.stringify(cart));
-      renderCart(); // Re-render cart after removing
+      renderCart(); // Re-render after removal
     });
   });
 }
 
-// Initial render
-renderCart();
+// Apply coupon logic
+if (applyBtn) {
+  applyBtn.addEventListener("click", () => {
+    const enteredCode = parseInt(coupon.value);
+    const validCodes = Object.values(couponCodes);
+
+    if (validCodes.includes(enteredCode)) {
+      discount = 0.10; // 10% discount
+      alert("✅ Coupon applied successfully! 10% discount.");
+    } else {
+      discount = 0;
+      alert("❌ Invalid coupon code.");
+    }
+
+    renderCart(); // Refresh prices
+  });
+}
 
 function showDeliveryPopup() {
   const popup = document.querySelector('.del-over');
   popup.style.display = 'flex';
-
   setTimeout(() => {
     popup.style.display = 'none';
   }, 3000);
 }
+
+// Initial render
+renderCart();
