@@ -42,7 +42,7 @@ function renderCart() {
       <div class="item-details">
         <h3>${product.name}</h3>
         <p>Price: ₹${product.price}</p>
-        <button class="remove-btn" data-index="${index}">Remove</button>
+        <button class="remove-btn" data-index="${index}"><img src="../Assets/trash-can.png"></img>Remove</button>
       </div>
     `;
     container.appendChild(item);

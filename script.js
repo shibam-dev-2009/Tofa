@@ -35,3 +35,27 @@ products.forEach(product => {
 
   container.appendChild(card);
 });
+
+
+let menu = document.querySelector("#menu");
+let menus = document.querySelector(".menus");
+let close = document.querySelector("#close-btn");
+
+menu.addEventListener("click", () => {
+  menus.style.display = "flex"; // ✅ Use the variable
+  menus.style.display = "opacity:1"; // ✅ Use the variable
+});
+close.addEventListener("click", () => {
+  menus.style.display = "none"; // ✅ Use the variable
+  menus.style.display = "opacity:0"; // ✅ Use the variable
+});
+
+
+
+
+const scrollBtn = document.getElementById("scroll-btn");
+const productList = document.getElementById("main");
+
+scrollBtn.addEventListener("click", () => {
+  productList.scrollIntoView({ behavior: "smooth" });
+});

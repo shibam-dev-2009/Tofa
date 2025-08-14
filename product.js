@@ -35,5 +35,12 @@ const products = [
     description: "Eco-friendly durable canvas bag.",
     image: "./Assets/2.jpg"
   },
+     {
+    id: 6,
+    name: "Tofa Drawer",
+    price: 599,
+    description: "Eco-friendly durable canvas bag.",
+    image: "./Assets/P1-TRUNK-NB.jpg"
+  },
 
 ];
