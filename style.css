@@ -204,3 +204,29 @@
   height: auto;
   border-radius: 4px;
 } */
+
+
+
+
+
+
+
+.footer{
+  background-color: white;
+  display: flex;
+  padding: 30px;
+  height: 100%;
+  gap: 30px;
+}
+.footer ul li{
+  list-style: none;
+  gap: 30px;
+  margin-top: 10px;
+}
+.footer button{
+  background-color: #c8e6c9;
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+}

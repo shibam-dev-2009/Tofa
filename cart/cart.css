@@ -54,7 +54,10 @@ body h1{
     border-radius: 10px;
 }
 .coupon button{
-  padding:10px 30px;
+   background-color:rgb(198, 243, 198);
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
 
 }
 .items {
@@ -153,4 +156,11 @@ hr{
 .remove-btn img{
   height: 20px;
   width: auto;
+}
+
+#place-order{
+  background-color:rgb(198, 243, 198);
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
 }
