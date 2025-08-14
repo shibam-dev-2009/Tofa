@@ -55,7 +55,7 @@ function renderCart() {
   // Apply discount if any
   if (discount > 0) {
     total = total - (total * discount);
-    applied.innerText = "₹"+(total * discount).toFixed(2);
+    applied.innerText ="Discount" +"₹"+(total * discount).toFixed(2);
   }
 
   subtotalBox.innerText = `Subtotal: ₹${subtotal}`;

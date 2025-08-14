@@ -92,7 +92,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   /* display: flex; */
   justify-content: space-between;
-  max-width: 300px;
+  width: 300px;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -120,6 +120,20 @@
 .product-card .add-to-cart-btn:hover {
   background-color: #c8e6c9;
 }
+
+#product-list{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media  (max-width: 600px) {
+  /* Your styles go here */
+  #product-list{
+    flex-direction: column;
+  }
+}
+
 
 /* .products p {
   text-align: center;

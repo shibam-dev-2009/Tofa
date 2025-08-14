@@ -2,37 +2,38 @@
 const products = [
   {
     id: 1,
-    name: "Tote Bag",
+    name: "Tofa Trend Top",
     price: 499,
     description: "Premium cotton tote bag for daily use.",
-    image: "3.jpg"
+    image: "./Assets/trend.jpg"
   },
   {
     id: 2,
-    name: "Canvas Bag",
+    name: "T10 Gym Vest",
     price: 599,
     description: "Eco-friendly durable canvas bag.",
-    image: "Untitled.jpg"
+    image: "./Assets/gymvest.jpg"
   },
     {
     id: 3,
-    name: "Canvas Bag",
+    name: "Big Sport",
     price: 599,
     description: "Eco-friendly durable canvas bag.",
-    image: "Untitled.jpg"
+    image: "./Assets/Untitled.jpg"
   },
      {
     id: 4,
-    name: "Canvas Bag",
+    name: "Hugo Marshall",
     price: 599,
     description: "Eco-friendly durable canvas bag.",
-    image: "Untitled.jpg"
+    image: "./Assets/hugo m.jpg"
   },
      {
     id: 5,
-    name: "Canvas Bag",
+    name: "Tofa Zee Line",
     price: 599,
     description: "Eco-friendly durable canvas bag.",
-    image: "Untitled.jpg"
-  }
+    image: "./Assets/2.jpg"
+  },
+
 ];
